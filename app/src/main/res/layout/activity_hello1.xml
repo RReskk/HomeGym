@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_bg"
+    tools:context=".Hello1">
+
+    <Button
+        android:id="@+id/fit"
+        android:layout_width="284dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_element"
+        android:paddingLeft="20sp"
+        android:text="Keeping fit"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:textColor="@color/blue_bg"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loss"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fit"
+        app:layout_constraintEnd_toEndOf="@+id/loss"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@+id/fit"
+        app:layout_constraintTop_toTopOf="@+id/fit"
+        app:layout_constraintVertical_bias="0.481"
+        app:srcCompat="@drawable/meditate" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="186dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="What us your purpose?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="185dp"
+        android:layout_height="94dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="Step 1/5"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"></TextView>
+
+    <Button
+        android:id="@+id/loss"
+        android:layout_width="284dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_element"
+        android:paddingLeft="20sp"
+        android:text="Weight loss"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:textColor="@color/blue_bg"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loss"
+        app:layout_constraintEnd_toEndOf="@+id/loss"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@+id/loss"
+        app:layout_constraintTop_toTopOf="@+id/loss"
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/scale" />
+
+    <Button
+        android:id="@+id/muscle"
+        android:layout_width="284dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_element"
+        android:paddingLeft="20sp"
+        android:stateListAnimator="@null"
+        android:text="Build muscle"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_bg"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/muscle"
+        app:layout_constraintEnd_toEndOf="@+id/muscle"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@+id/muscle"
+        app:layout_constraintTop_toTopOf="@+id/muscle"
+        app:layout_constraintVertical_bias="0.481"
+        app:srcCompat="@drawable/biceps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <item>
+        <shape android:gravity="center">
+            <solid android:color="@color/blue"></solid>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:alpha="0.69"
+            android:gravity="fill_horizontal|fill_vertical"
+            android:src="@drawable/squats"/>
+    </item>
+    <item
+        android:height="120dp"
+        android:width="120dp"
+        android:gravity="center_horizontal"
+        android:top="100dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/white"></solid>
+        </shape>
+    </item>
+    <item
+        android:height="140dp"
+        android:width="140dp"
+        android:gravity="center_horizontal"
+        android:top="90dp"
+        android:drawable="@drawable/logo">
+    </item>
+</layer-list>
+
