@@ -17,7 +17,6 @@ public class SignIn extends AppCompatActivity {
     EditText loginText;
     EditText pwdText;
     Button signIn;
-    Intent intent;
     TextView signUp;
     TextView skip;
     DBHelper DB;
@@ -26,12 +25,7 @@ public class SignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_in);
-        loginText = findViewById(R.id.editText1);
-        pwdText = findViewById(R.id.editText2);
-        signIn = findViewById(R.id.button);
-        signUp = findViewById(R.id.signUp);
-        skip = findViewById(R.id.skip);
-        DB = new DBHelper(this);
+        Init();
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +92,15 @@ public class SignIn extends AppCompatActivity {
                 .setMessage(message)
                 .setPositiveButton(android.R.string.ok, null)
                 .show();
+    }
+
+    private void Init() {
+        loginText = findViewById(R.id.editText1);
+        pwdText = findViewById(R.id.editText2);
+        signIn = findViewById(R.id.button);
+        signUp = findViewById(R.id.signUp);
+        skip = findViewById(R.id.skip);
+        DB = new DBHelper(this);
     }
 
 }
