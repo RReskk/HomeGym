@@ -8,12 +8,24 @@
     tools:context=".Hello3">
 
     <ImageView
-        android:id="@+id/shadow"
+        android:id="@+id/man_shadow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/man" />
+        android:src="@drawable/man"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/woman_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/woman"
+        android:visibility="invisible"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
