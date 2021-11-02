@@ -15,6 +15,7 @@ public class Hello2 extends AppCompatActivity {
     ImageButton femaleButton;
     ImageButton maleButton;
     Button next;
+    Boolean pushed = false;
     private int gender_id;
     private final String gender = "gender";
 
@@ -43,10 +44,12 @@ public class Hello2 extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                edit.apply();
-                next.setBackgroundResource(R.drawable.custom_golden_element);
-                Intent intent = new Intent(Hello2.this, Hello3.class);
-                startActivity(intent);
+                if (pushed == true) {
+                    edit.apply();
+                    next.setBackgroundResource(R.drawable.custom_golden_element);
+                    Intent intent = new Intent(Hello2.this, Hello3.class);
+                    startActivity(intent);
+                }
             }
         });
     }
@@ -60,6 +63,7 @@ public class Hello2 extends AppCompatActivity {
             femaleButton.setBackgroundResource(R.drawable.custom_golden_element);
             maleButton.setBackgroundResource(R.drawable.custom_element);
         }
+        pushed = true;
     }
 
     private void Init() {

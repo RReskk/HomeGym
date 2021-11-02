@@ -33,7 +33,7 @@ public class SignIn extends AppCompatActivity {
                 Boolean check_result = Check();
                 if (check_result == true) {
                     Toast.makeText(getApplicationContext(), "Успешный вход", Toast.LENGTH_SHORT).show();
-                    GoTo(Hello1.class, true);
+                    GoTo(Main.class, true);
                 }
             }
         });
@@ -48,7 +48,7 @@ public class SignIn extends AppCompatActivity {
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GoTo(Hello1.class, true);
+                GoTo(Main.class, true);
             }
         });
     }

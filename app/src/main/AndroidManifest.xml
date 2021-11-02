@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeGym">
         <activity
+            android:name=".Hello5"
+            android:exported="true" />
+        <activity
+            android:name=".Main"
+            android:exported="true" />
+        <activity
+            android:name=".Hello4"
+            android:exported="true" />
+        <activity
             android:name=".Hello3"
             android:exported="true" />
         <activity
