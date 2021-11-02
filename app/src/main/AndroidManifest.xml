@@ -14,6 +14,7 @@
             android:exported="true" />
         <activity
             android:name=".Main"
+            android:theme="@style/gradientoo"
             android:exported="true" />
         <activity
             android:name=".Hello4"

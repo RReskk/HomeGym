@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blue">#2E70BE</color>
-    <color name = "blue_bg">#6E9CD2</color>
+    <color name="blue_bg">#6E9CD2</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="low_grey">#B5B5B5</color>
     <color name="golden">#E3DFBC</color>
+    <color name="ultra_grey">#F9F9F9</color>
+    <color name="transparent">#00000000</color>
 </resources>
