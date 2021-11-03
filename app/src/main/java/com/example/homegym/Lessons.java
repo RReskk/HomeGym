@@ -1,5 +1,6 @@
 package com.example.homegym;
 
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,58 +8,114 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Lessons#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class Lessons extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    TextView buttonHands;
+    TextView buttonSpine;
+    TextView buttonTorso;
+    TextView buttonLegs;
+    ImageView image1;
+    ImageView image2;
+    ImageView image3;
+    ImageView image4;
 
     public Lessons() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Lessons.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Lessons newInstance(String param1, String param2) {
-        Lessons fragment = new Lessons();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lessons, container, false);
+        View v = inflater.inflate(R.layout.fragment_lessons, container, false);
+        Init(v);
+
+        ImageView[] masImage = {image1, image2, image3, image4};
+        TextView[] masTextView = {buttonHands, buttonSpine, buttonTorso, buttonLegs};
+
+        buttonHands.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Change(buttonHands, masTextView, masImage);
+            }
+        });
+
+        buttonSpine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Change(buttonSpine, masTextView, masImage);
+            }
+        });
+
+
+        buttonTorso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Change(buttonTorso, masTextView, masImage);
+            }
+        });
+
+
+        buttonLegs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Change(buttonLegs, masTextView, masImage);
+            }
+        });
+
+        return v;
+    }
+
+    private void Change(TextView textView, TextView[] mas, ImageView[] imas) {
+        String drawable_name = "null";
+        String value = textView.getText().toString();
+
+        switch (value) {
+            case "Hands":
+                drawable_name = "bcps";
+                break;
+            case "Spine":
+                drawable_name = "fback";
+                break;
+            case "Torso":
+                drawable_name = "ftors";
+                break;
+            case "Legs":
+                drawable_name = "flegs";
+        }
+
+        int resID = getResources().getIdentifier(drawable_name, "drawable", getContext().getPackageName());
+
+        for (TextView text : mas) {
+            if (text.getText().equals(value)) {
+                text.setTextColor(getResources().getColor(R.color.white));
+                text.setBackgroundResource(R.color.blue_bg);
+            }
+            else {
+                text.setTextColor(getResources().getColor(R.color.blue_bg));
+                text.setBackgroundResource(R.drawable.stroke);
+            }
+        }
+
+        for (ImageView image: imas) {
+            image.setImageResource(resID);
+        }
+    }
+
+    private void Init(View v){
+        buttonHands = v.findViewById(R.id.textView13);
+        buttonSpine = v.findViewById(R.id.textView19);
+        buttonTorso = v.findViewById(R.id.textView20);
+        buttonLegs = v.findViewById(R.id.textView21);
+
+        image1 = v.findViewById(R.id.imageView16);
+        image2 = v.findViewById(R.id.imageView17);
+        image3 = v.findViewById(R.id.imageView18);
+        image4 = v.findViewById(R.id.imageView19);
+
     }
 }
