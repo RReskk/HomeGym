@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="165dp"
+        android:background="@color/low_grey" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/low_grey" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/low_grey" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="235dp"
+        android:background="@color/low_grey" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="270dp"
+        android:background="@color/low_grey" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="Training rest"
+        android:textColor="@color/blue_bg"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="135dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="Notifications"
+        android:textColor="@color/blue_bg"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="Biometric"
+        android:textColor="@color/blue_bg"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="205dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="Start dialog"
+        android:textColor="@color/blue_bg"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="Privacy police"
+        android:textColor="@color/blue_bg"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="30 sec"
+        android:textColor="@color/blue_bg"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/desdev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:text="Design by Sergey Klimovich\nDevelop by Oleg Davydov"
+        android:textAlignment="center"
+        android:textColor="@color/blue_bg"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_marginBottom="-180dp"
+        android:layout_gravity="center"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_element"
+        android:fontFamily="@font/nd_astroneer"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_bg"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/upLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/gradient"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nd_astroneer"
+            android:text="null"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textLUP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Guest"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nd_astroneer"
+            android:text="null"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/gradient"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nd_astroneer"
+            android:text="Weight"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textLUP3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="Gender"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nd_astroneer"
+            android:text="Height"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="10dp"
+        android:checked="true"
+        android:keepScreenOn="false"
+        android:textColorHighlight="@color/blue_bg"
+        android:textColorLink="@color/blue_bg"
+        android:theme="@style/SCBSwitch" />
+
+</FrameLayout>
